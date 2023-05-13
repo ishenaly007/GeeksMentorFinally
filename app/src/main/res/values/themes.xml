@@ -22,9 +22,4 @@
     <style name="Theme.RetrofitTest.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.RetrofitTest.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    <!-- Base application theme. -->
-    <style name="Base.Theme.RetrofitTest" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
 </resources>
