@@ -22,6 +22,7 @@
     <style name="Theme.RetrofitTest.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.RetrofitTest.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <!-- Custom app themes -->
     <style name="btn_white_and_black">
         <item name="android:textColor">#FFFFFF</item>
@@ -47,5 +48,11 @@
         <item name="android:fontFamily">@font/sf_regular</item>
         <item name="android:drawablePadding">8dp</item>
         <item name="backgroundTint">#F5F6F6</item>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RetrofitTest" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
     </style>
 </resources>
