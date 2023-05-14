@@ -1,42 +1,15 @@
 package com.abit8.retrofittest.ui.home
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import by.kirich1409.viewbindingdelegate.viewBinding
+import com.abit8.retrofittest.R
+import com.abit8.retrofittest.base.BaseFragment
 import com.abit8.retrofittest.databinding.FragmentHomeBinding
+import com.abit8.retrofittest.utils.NetworkChangeListener
 
-class HomeFragment : Fragment() {
-
-    private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
-
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+class HomeFragment :
+    BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
+    override val binding by viewBinding(FragmentHomeBinding::bind)
+    override val networkChangeListener: NetworkChangeListener by lazy {
+        NetworkChangeListener()
     }
 }

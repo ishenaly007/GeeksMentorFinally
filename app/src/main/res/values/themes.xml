@@ -48,6 +48,7 @@
         <item name="android:fontFamily">@font/sf_regular</item>
         <item name="android:drawablePadding">8dp</item>
         <item name="backgroundTint">#F5F6F6</item>
+    </style>
 
     <!-- Base application theme. -->
     <style name="Base.Theme.RetrofitTest" parent="Theme.Material3.DayNight.NoActionBar">

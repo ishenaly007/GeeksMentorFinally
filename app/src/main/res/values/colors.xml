@@ -14,4 +14,7 @@
     <color name="light_grey_new">#9E9E9E</color>
     <color name="grey_new">#9E9E9E</color>
     <color name="grey_new_et">#F5F6F6</color>
+    //no_internet_dialog
+    <color name="no_internet_dialog_background">#262523</color>
+    <color name="tv_try_color">#FFE600</color>
 </resources>
